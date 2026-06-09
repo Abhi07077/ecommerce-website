@@ -655,12 +655,20 @@ p {
     }
     
     #cart {
-        padding: 0 20px 40px 20px;
+        padding: 0 16px 40px 16px;
+    }
+
+    #cart-header h2 {
+        font-size: 28px;
+    }
+
+    #cart-header p {
+        font-size: 14px;
     }
     
     #cart-add {
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
     }
     
     #coupon, #subtotal {
@@ -668,66 +676,141 @@ p {
     }
     
     /* Responsive Table to Cards */
-    #cart table {
+    #cart-content > table {
         border: none;
         box-shadow: none;
+        white-space: normal;
+        table-layout: auto;
     }
     
-    #cart table thead {
-        display: none; /* Hide standard headers on mobile */
+    #cart-content > table thead {
+        display: none;
     }
     
-    #cart table, #cart table tbody, #cart table tr, #cart table td {
+    #cart-content > table, 
+    #cart-content > table tbody, 
+    #cart-content > table tr, 
+    #cart-content > table td {
         display: block;
         width: 100%;
     }
-    
-    #cart table tr {
-        background: #fff;
-        border: 1px solid #eef0f3;
-        border-radius: 12px;
-        margin-bottom: 20px;
-        padding: 15px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+
+    /* Reset all fixed column widths for mobile */
+    #cart-content > table th,
+    #cart-content > table td {
+        width: auto !important;
     }
     
-    #cart table td {
+    #cart-content > table tr {
+        background: #fff;
+        border: 1px solid #eef0f3;
+        border-radius: 14px;
+        margin-bottom: 16px;
+        padding: 16px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    }
+    
+    #cart-content > table td {
         border-bottom: none;
         padding: 10px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
         text-align: right;
+        white-space: normal;
     }
     
-    /* Label prefix for cards */
-    #cart table td::before {
+    /* Label prefix for mobile cards */
+    #cart-content > table td::before {
         content: attr(data-label);
         font-weight: 600;
         color: #222;
         text-transform: uppercase;
-        font-size: 13px;
+        font-size: 12px;
+        letter-spacing: 0.3px;
         text-align: left;
+        flex-shrink: 0;
+        margin-right: 12px;
     }
     
-    #cart table td:nth-child(1),
-    #cart table td:nth-child(2),
-    #cart table td:nth-child(3),
-    #cart table td:nth-child(4),
-    #cart table td:nth-child(5),
-    #cart table td:nth-child(6) {
-        width: 100%;
+    /* Hide Sr. No. on mobile */
+    #cart-content > table td:nth-child(1) {
+        display: none;
     }
     
-    #cart table td:nth-child(2) {
+    /* Hide labels for Product Name and Action cells */
+    #cart-content > table td:nth-child(2)::before,
+    #cart-content > table td:nth-child(6)::before {
+        content: none;
+    }
+    
+    /* Product Name cell — left-aligned with image */
+    #cart-content > table td:nth-child(2) {
         justify-content: flex-start;
         text-align: left;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #f4f5f7;
     }
     
     .product-cell {
         width: 100%;
     }
+
+    .product-cell img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .product-info .name {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    /* Size cell */
+    #cart-content > table td:nth-child(3) {
+        border-top: none;
+    }
+
+    /* Quantity cell */
+    #cart-content > table td:nth-child(4) {
+        padding: 10px 0;
+    }
+
+    .quantity-control input {
+        width: 40px;
+    }
+
+    /* Total price cell */
+    #cart-content > table td:nth-child(5) {
+        font-weight: 600;
+        color: #222;
+        font-size: 15px;
+    }
+
+    /* Action cell — centered delete button */
+    #cart-content > table td:nth-child(6) {
+        justify-content: center;
+        border-top: 1px solid #f4f5f7;
+        padding-top: 12px;
+    }
+
+    .remove-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 20px;
+        border-radius: 8px;
+        color: #d9534f;
+        background-color: rgba(217, 83, 79, 0.06);
+        transition: all 0.2s ease;
+    }
+
+    .remove-btn:hover {
+        background-color: rgba(217, 83, 79, 0.15);
+        transform: none;
+    }
     
+    /* Footer responsive */
     #footer {
         flex-direction: column;
         padding: 40px 20px;
@@ -743,5 +826,21 @@ p {
 
     #footer img {
         width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    #cart {
+        padding: 0 12px 40px 12px;
+    }
+    #coupon, #subtotal {
+        padding: 18px;
+    }
+    #coupon div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #coupon button {
+        width: 100%;
     }
 }
