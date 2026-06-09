@@ -463,15 +463,243 @@ body {
     color: #d9534f;
 }
 
+/* ==========================================
+   Responsive & Hamburger Menu Drawer Styles
+   ========================================== */
+#hamburger, #close-menu, #menu-overlay, #menu-toggle {
+    display: none;
+}
 
+@media (max-width: 1024px) {
+    #header {
+        padding: 10px 40px;
+    }
+    #hero {
+        padding: 0 100px;
+    }
+    .products {
+        width: 30%;
+    }
+}
 
+@media (max-width: 768px) {
+    /* Responsive header using CSS Grid */
+    #header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+        gap: 12px;
+        padding: 10px 20px;
+        align-items: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+    }
 
+    #logo {
+        grid-column: 1;
+        grid-row: 1;
+        height: 50px;
+        width: auto;
+    }
 
+    #hamburger {
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #222;
+        transition: color 0.2s ease;
+    }
 
+    #hamburger span {
+        font-size: 30px;
+    }
 
+    #search-box {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        width: 100%;
+        max-width: 100%;
+        height: 38px;
+        margin: 0;
+    }
 
+    #navigation {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: #ffffff;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 80px 30px 40px 30px;
+        transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        z-index: 1000;
+    }
 
+    #close-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        color: #222;
+        transition: color 0.2s ease;
+    }
 
+    #close-menu span {
+        font-size: 30px;
+    }
 
+    #close-menu:hover, #hamburger:hover {
+        color: #088178;
+    }
 
+    #nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        width: 100%;
+    }
+
+    #nav-list li {
+        margin: 0;
+        width: 100%;
+    }
+
+    #nav-list li a {
+        font-size: 18px;
+        display: block;
+        padding: 8px 0;
+        width: 100%;
+        border-bottom: 1px solid #f4f5f7;
+    }
+
+    #menu-toggle:checked ~ #navigation {
+        right: 0;
+    }
+
+    #menu-toggle:checked ~ #menu-overlay {
+        display: block;
+    }
+
+    #menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 999;
+        backdrop-filter: blur(2px);
+    }
+
+    /* Home Page Content Responsiveness */
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 15px;
+    }
+
+    #hero {
+        padding: 0 20px;
+        align-items: center;
+        background-position: center;
+        height: 70vh;
+    }
+    
+    #hero div {
+        text-align: center;
+    }
+
+    #features {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #features div {
+        width: 45%;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    #features div img {
+        width: 50%;
+    }
+
+    .product-container {
+        justify-content: center;
+    }
+
+    .products {
+        width: 45%;
+        margin: 10px 2.5%;
+        padding: 15px;
+    }
+
+    .products img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    #call-to-action {
+        justify-content: center;
+        text-align: center;
+        min-height: 50vh;
+        padding: 60px 20px;
+    }
+
+    #call-to-action div h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #footer {
+        flex-direction: column;
+        padding: 40px 20px;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    #footer div {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #footer img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    #features div {
+        width: 90%;
+    }
+
+    .products {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
 
