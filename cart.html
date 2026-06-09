@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart</title>
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <section id="header">
+         <a href="index.html"><img id="logo" src="assets/logo.png" alt="Logo"></a>
+
+         <div id="search-box">
+            <input type="text" placeholder="Search Product">
+            <button id="search-btn"><span class="material-symbols-outlined">search</span></button>
+         </div>
+         <nav id="navigation">
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Shop</a></li>
+                <li><a href="wishlist.html"><span class="material-symbols-outlined">favorite</span></a></li>
+                <li><a href="cart.html" class="active"><span class="material-symbols-outlined">shopping_cart</span></a></li>
+            </ul>
+         </nav>
+    </section>
+
+    <!-- Page Header Banner -->
+    <section id="cart-header">
+        <h2>#Shopping_Cart</h2>
+        <p>Review your selection & proceed to checkout</p>
+    </section>
+
+    <!-- Cart Contents -->
+    <section id="cart">
+        <!-- Cart Table (Only visible if cart is not empty) -->
+        <div id="cart-content">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Product Name</th>
+                        <th>Size</th>
+                        <th>Quantity</th>
+                        <th>Total Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Items will be injected dynamically via Javascript -->
+                </tbody>
+            </table>
+
+            <!-- Coupon and Summary Panel -->
+            <div id="cart-add">
+                <div id="coupon">
+                    <h3>Apply Coupon</h3>
+                    <p>Enter your coupon code to receive discounts on your purchase.</p>
+                    <div>
+                        <input type="text" id="coupon-code" placeholder="Enter Coupon Code (Try: DEAL50)">
+                        <button id="apply-coupon-btn">Apply</button>
+                    </div>
+                    <div id="coupon-message" style="margin-top: 10px; font-size: 14px; font-weight: 600;"></div>
+                </div>
+
+                <div id="subtotal">
+                    <h3>Cart Totals</h3>
+                    <table>
+                        <tr>
+                            <td>Cart Subtotal</td>
+                            <td id="cart-subtotal">$0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Shipping</td>
+                            <td id="shipping-cost">Free</td>
+                        </tr>
+                        <tr id="discount-row" style="display: none;">
+                            <td>Coupon Discount (50% Off)</td>
+                            <td id="discount-amount" style="color: #d9534f;">-$0.00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Grand Total</strong></td>
+                            <td><strong id="grand-total">$0.00</strong></td>
+                        </tr>
+                    </table>
+                    <button id="checkout-btn">Proceed to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empty Cart Display -->
+        <div id="empty-cart" class="empty-cart-container">
+            <span class="material-symbols-outlined">shopping_cart_off</span>
+            <h3>Your cart is empty</h3>
+            <p>Add Some Products!</p>
+            <a href="catalog.html" class="shop-btn">Continue Shopping</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section id="footer">
+       <img src="assets/logo.png" alt="Logo">
+       <div id="contact">
+          <h6>Contact</h6>
+          <br>
+          <p>Address : Jath 416412, Maharastra</p>
+          <p>Phone : 3724785892</p>
+          <p>Hours : 10.00 - 18.00, Mon - Sat</p>
+       </div>
+       <div id="About">
+          <h6>About</h6> 
+          <br>
+          <p>About Us</p>
+          <p>Delivery Information</p>
+          <p>Privacy policy</p>
+          <p>Terms & Conditions</p>
+          <p>Contact Us</p>
+       </div>
+       <div id="account">
+          <h6>Account</h6>
+          <br>
+          <p>Sign in</p>
+          <p>My Account</p>
+          <p>Wishlist</p>
+          <p>Track my Order</p>
+          <p>help</p>
+       </div>
+    </section>
+
+    <!-- Dynamic Cart Logic Script -->
+    <script>
+        // Setup initial cart data if localStorage is empty
+        const defaultCart = [
+            {
+                id: "1",
+                brand: "adidas",
+                name: "Men's Blue Denim Shirt",
+                price: 78.00,
+                image: "assets/images/casual_shirts/img_0016.jpg",
+                size: "M",
+                quantity: 1
+            },
+            {
+                id: "2",
+                brand: "adidas",
+                name: "Solid Cotton Crewneck T-Shirt",
+                price: 35.00,
+                image: "assets/images/solid_tshirts/img_0002.jpg",
+                size: "L",
+                quantity: 2
+            }
+        ];
+
+        // Retrieve or initialize cart from localStorage
+        let cart = JSON.parse(localStorage.getItem('cart'));
+        if (!cart || cart.length === 0) {
+            cart = defaultCart;
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        let appliedDiscount = 0; // percentage
+        
+        // Render Cart Items
+        function renderCart() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartContentDiv = document.getElementById('cart-content');
+            const emptyCartDiv = document.getElementById('empty-cart');
+
+            if (cart.length === 0) {
+                cartContentDiv.style.display = 'none';
+                emptyCartDiv.style.display = 'block';
+                return;
+            }
+
+            cartContentDiv.style.display = 'block';
+            emptyCartDiv.style.display = 'none';
+
+            cartItemsContainer.innerHTML = '';
+
+            cart.forEach((item, index) => {
+                const itemTotal = (item.price * item.quantity).toFixed(2);
+                
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td data-label="Sr. No.">${index + 1}</td>
+                    <td data-label="Product Name">
+                        <div class="product-cell">
+                            <img src="${item.image}" alt="${item.name}">
+                            <div class="product-info">
+                                <span class="brand">${item.brand}</span>
+                                <span class="name">${item.name}</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-label="Size">${item.size}</td>
+                    <td data-label="Quantity">
+                        <div class="quantity-control">
+                            <button onclick="updateQty(${index}, -1)">-</button>
+                            <input type="number" min="1" value="${item.quantity}" onchange="changeQtyDirectly(${index}, this.value)">
+                            <button onclick="updateQty(${index}, 1)">+</button>
+                        </div>
+                    </td>
+                    <td data-label="Total Price">$${itemTotal}</td>
+                    <td data-label="Action">
+                        <button class="remove-btn" onclick="removeItem(${index})">
+                            <span class="material-symbols-outlined">delete</span>
+                        </button>
+                    </td>
+                `;
+                cartItemsContainer.appendChild(tr);
+            });
+
+            updateTotals();
+        }
+
+        // Update quantity increment/decrement
+        window.updateQty = function(index, delta) {
+            cart[index].quantity += delta;
+            if (cart[index].quantity < 1) {
+                cart[index].quantity = 1;
+            }
+            saveAndRender();
+        };
+
+        // Handle text field quantity entry directly
+        window.changeQtyDirectly = function(index, value) {
+            const qty = parseInt(value, 10);
+            if (isNaN(qty) || qty < 1) {
+                cart[index].quantity = 1;
+            } else {
+                cart[index].quantity = qty;
+            }
+            saveAndRender();
+        };
+
+        // Remove item from cart
+        window.removeItem = function(index) {
+            cart.splice(index, 1);
+            saveAndRender();
+        };
+
+        // Save state and refresh view
+        function saveAndRender() {
+            localStorage.setItem('cart', JSON.stringify(cart));
+            renderCart();
+        }
+
+        // Recalculate and display cart totals
+        function updateTotals() {
+            let subtotal = 0;
+            cart.forEach(item => {
+                subtotal += item.price * item.quantity;
+            });
+
+            document.getElementById('cart-subtotal').textContent = `$${subtotal.toFixed(2)}`;
+
+            let discount = 0;
+            const discountRow = document.getElementById('discount-row');
+            if (appliedDiscount > 0) {
+                discount = subtotal * (appliedDiscount / 100);
+                document.getElementById('discount-amount').textContent = `-$${discount.toFixed(2)}`;
+                discountRow.style.display = 'table-row';
+            } else {
+                discountRow.style.display = 'none';
+            }
+
+            const grandTotal = subtotal - discount;
+            document.getElementById('grand-total').textContent = `$${grandTotal.toFixed(2)}`;
+        }
+
+        // Apply Coupon logic
+        document.getElementById('apply-coupon-btn').addEventListener('click', () => {
+            const couponInput = document.getElementById('coupon-code').value.trim().toUpperCase();
+            const messageDiv = document.getElementById('coupon-message');
+
+            if (couponInput === 'DEAL50') {
+                appliedDiscount = 50;
+                messageDiv.style.color = '#088178';
+                messageDiv.textContent = 'Coupon applied successfully! 50% discount has been applied.';
+            } else if (couponInput === '') {
+                messageDiv.style.color = '#d9534f';
+                messageDiv.textContent = 'Please enter a coupon code.';
+            } else {
+                appliedDiscount = 0;
+                messageDiv.style.color = '#d9534f';
+                messageDiv.textContent = 'Invalid coupon code. Try entering "DEAL50".';
+            }
+            updateTotals();
+        });
+
+        // Checkout simulation
+        document.getElementById('checkout-btn').addEventListener('click', () => {
+            alert('Thank you for your order! Your purchase was successful.');
+            cart = [];
+            appliedDiscount = 0;
+            document.getElementById('coupon-code').value = '';
+            document.getElementById('coupon-message').textContent = '';
+            saveAndRender();
+        });
+
+        // Initial render
+        renderCart();
+    </script>
+</body>
+</html>

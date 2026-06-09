@@ -1,0 +1,802 @@
+[
+  {
+    "id": "casual_shirts_img_0016",
+    "brand": "adidas",
+    "name": "Blue Denim Shirt",
+    "price": 78.00,
+    "image": "assets/images/casual_shirts/img_0016.jpg",
+    "category": "Casual",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "casual_shirts_img_0017",
+    "brand": "adidas",
+    "name": "Classic Denim Shirt",
+    "price": 72.00,
+    "image": "assets/images/casual_shirts/img_0017.jpg",
+    "category": "Casual",
+    "rating": 4.2,
+    "inStock": true
+  },
+  {
+    "id": "casual_shirts_img_0018",
+    "brand": "adidas",
+    "name": "Indigo Chambray Shirt",
+    "price": 68.00,
+    "image": "assets/images/casual_shirts/img_0018.jpg",
+    "category": "Casual",
+    "rating": 3.9,
+    "inStock": true
+  },
+  {
+    "id": "casual_shirts_img_0019",
+    "brand": "Nike",
+    "name": "Casual Blue Work Shirt",
+    "price": 85.00,
+    "image": "assets/images/casual_shirts/img_0019.jpg",
+    "category": "Casual",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "id": "casual_shirts_img_0020",
+    "brand": "Puma",
+    "name": "Lightwash Cotton Shirt",
+    "price": 65.00,
+    "image": "assets/images/casual_shirts/img_0020.jpg",
+    "category": "Casual",
+    "rating": 4.1,
+    "inStock": true
+  },
+  {
+    "id": "casual_shirts_img_0021",
+    "brand": "Zara",
+    "name": "Slim Fit Indigo Shirt",
+    "price": 75.00,
+    "image": "assets/images/casual_shirts/img_0021.jpg",
+    "category": "Casual",
+    "rating": 4.4,
+    "inStock": true
+  },
+  {
+    "id": "casual_shirts_img_0022",
+    "brand": "H&M",
+    "name": "Washed Cotton Casual Shirt",
+    "price": 59.00,
+    "image": "assets/images/casual_shirts/img_0022.jpg",
+    "category": "Casual",
+    "rating": 4.0,
+    "inStock": true
+  },
+  {
+    "id": "casual_shirts_img_0023",
+    "brand": "adidas",
+    "name": "Vintage Blue Shirt",
+    "price": 89.00,
+    "image": "assets/images/casual_shirts/img_0023.jpg",
+    "category": "Casual",
+    "rating": 4.7,
+    "inStock": true
+  },
+  {
+    "id": "casual_shirts_img_0024",
+    "brand": "Nike",
+    "name": "Utility Indigo Shirt",
+    "price": 95.00,
+    "image": "assets/images/casual_shirts/img_0024.jpg",
+    "category": "Casual",
+    "rating": 4.8,
+    "inStock": true
+  },
+  {
+    "id": "casual_shirts_img_0025",
+    "brand": "Puma",
+    "name": "Textured Cotton Shirt",
+    "price": 70.00,
+    "image": "assets/images/casual_shirts/img_0025.jpg",
+    "category": "Casual",
+    "rating": 4.3,
+    "inStock": true
+  },
+  {
+    "id": "casual_shirts_img_0026",
+    "brand": "Zara",
+    "name": "Soft Brushed Cotton Shirt",
+    "price": 80.00,
+    "image": "assets/images/casual_shirts/img_0026.jpg",
+    "category": "Casual",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "casual_shirts_img_0027",
+    "brand": "H&M",
+    "name": "Everyday Denim Shirt",
+    "price": 64.00,
+    "image": "assets/images/casual_shirts/img_0027.jpg",
+    "category": "Casual",
+    "rating": 4.2,
+    "inStock": true
+  },
+  {
+    "id": "formal_shirts_img_0001",
+    "brand": "Zara",
+    "name": "White Dress Shirt",
+    "price": 95.00,
+    "image": "assets/images/formal_shirts/img_0001.jpg",
+    "category": "Formal",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "id": "formal_shirts_img_0003",
+    "brand": "Zara",
+    "name": "Classic Blue Business Shirt",
+    "price": 89.00,
+    "image": "assets/images/formal_shirts/img_0003.jpg",
+    "category": "Formal",
+    "rating": 4.4,
+    "inStock": true
+  },
+  {
+    "id": "formal_shirts_img_0004",
+    "brand": "H&M",
+    "name": "Modern Fit Oxford Shirt",
+    "price": 79.00,
+    "image": "assets/images/formal_shirts/img_0004.jpg",
+    "category": "Formal",
+    "rating": 4.3,
+    "inStock": true
+  },
+  {
+    "id": "formal_shirts_img_0005",
+    "brand": "H&M",
+    "name": "Striped Dobby Dress Shirt",
+    "price": 85.00,
+    "image": "assets/images/formal_shirts/img_0005.jpg",
+    "category": "Formal",
+    "rating": 4.2,
+    "inStock": true
+  },
+  {
+    "id": "formal_shirts_img_0006",
+    "brand": "adidas",
+    "name": "Performance Formal Shirt",
+    "price": 110.00,
+    "image": "assets/images/formal_shirts/img_0006.jpg",
+    "category": "Formal",
+    "rating": 4.7,
+    "inStock": true
+  },
+  {
+    "id": "formal_shirts_img_0007",
+    "brand": "Nike",
+    "name": "Tech-Knit Dress Shirt",
+    "price": 120.00,
+    "image": "assets/images/formal_shirts/img_0007.jpg",
+    "category": "Formal",
+    "rating": 4.8,
+    "inStock": true
+  },
+  {
+    "id": "formal_shirts_img_0008",
+    "brand": "Puma",
+    "name": "Breathable Business Shirt",
+    "price": 99.00,
+    "image": "assets/images/formal_shirts/img_0008.jpg",
+    "category": "Formal",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "formal_shirts_img_0009",
+    "brand": "Zara",
+    "name": "Charcoal Herringbone Shirt",
+    "price": 105.00,
+    "image": "assets/images/formal_shirts/img_0009.jpg",
+    "category": "Formal",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "id": "formal_pants_img_0001",
+    "brand": "Zara",
+    "name": "Slim Fit Suit Trousers",
+    "price": 115.00,
+    "image": "assets/images/formal_pants/img_0001.jpg",
+    "category": "Formal",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "formal_pants_img_0002",
+    "brand": "Zara",
+    "name": "Navy Wool Mix Trousers",
+    "price": 125.00,
+    "image": "assets/images/formal_pants/img_0002.jpg",
+    "category": "Formal",
+    "rating": 4.7,
+    "inStock": true
+  },
+  {
+    "id": "formal_pants_img_0003",
+    "brand": "H&M",
+    "name": "Charcoal Grey Dress Pants",
+    "price": 89.00,
+    "image": "assets/images/formal_pants/img_0003.jpg",
+    "category": "Formal",
+    "rating": 4.1,
+    "inStock": true
+  },
+  {
+    "id": "formal_pants_img_0005",
+    "brand": "H&M",
+    "name": "Black Tailored Trousers",
+    "price": 95.00,
+    "image": "assets/images/formal_pants/img_0005.jpg",
+    "category": "Formal",
+    "rating": 4.3,
+    "inStock": true
+  },
+  {
+    "id": "formal_pants_img_0006",
+    "brand": "adidas",
+    "name": "Commuter Stretch Pants",
+    "price": 130.00,
+    "image": "assets/images/formal_pants/img_0006.jpg",
+    "category": "Formal",
+    "rating": 4.8,
+    "inStock": true
+  },
+  {
+    "id": "formal_pants_img_0007",
+    "brand": "Nike",
+    "name": "Dri-FIT Dress Slacks",
+    "price": 140.00,
+    "image": "assets/images/formal_pants/img_0007.jpg",
+    "category": "Formal",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "id": "formal_pants_img_0009",
+    "brand": "Puma",
+    "name": "Modern Golf Dress Pants",
+    "price": 110.00,
+    "image": "assets/images/formal_pants/img_0009.jpg",
+    "category": "Formal",
+    "rating": 4.4,
+    "inStock": true
+  },
+  {
+    "id": "formal_pants_img_0010",
+    "brand": "Zara",
+    "name": "Beige Chino Dress Pants",
+    "price": 99.00,
+    "image": "assets/images/formal_pants/img_0010.jpg",
+    "category": "Formal",
+    "rating": 4.2,
+    "inStock": true
+  },
+  {
+    "id": "jeans_img_0001",
+    "brand": "Puma",
+    "name": "Classic Blue Slim Jeans",
+    "price": 85.00,
+    "image": "assets/images/jeans/img_0001.jpg",
+    "category": "Jeans",
+    "rating": 4.3,
+    "inStock": true
+  },
+  {
+    "id": "jeans_img_0002",
+    "brand": "Puma",
+    "name": "Dark Wash Straight Jeans",
+    "price": 90.00,
+    "image": "assets/images/jeans/img_0002.jpg",
+    "category": "Jeans",
+    "rating": 4.4,
+    "inStock": true
+  },
+  {
+    "id": "jeans_img_0003",
+    "brand": "adidas",
+    "name": "Standard Fit Blue Jeans",
+    "price": 95.00,
+    "image": "assets/images/jeans/img_0003.jpg",
+    "category": "Jeans",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "jeans_img_0004",
+    "brand": "Nike",
+    "name": "Comfort Stretch Denim",
+    "price": 110.00,
+    "image": "assets/images/jeans/img_0004.jpg",
+    "category": "Jeans",
+    "rating": 4.7,
+    "inStock": true
+  },
+  {
+    "id": "jeans_img_0005",
+    "brand": "Zara",
+    "name": "Ripped Light Wash Jeans",
+    "price": 89.00,
+    "image": "assets/images/jeans/img_0005.jpg",
+    "category": "Jeans",
+    "rating": 4.1,
+    "inStock": true
+  },
+  {
+    "id": "jeans_img_0006",
+    "brand": "H&M",
+    "name": "Slim Fit Black Jeans",
+    "price": 69.00,
+    "image": "assets/images/jeans/img_0006.jpg",
+    "category": "Jeans",
+    "rating": 4.2,
+    "inStock": true
+  },
+  {
+    "id": "jeans_img_0007",
+    "brand": "Puma",
+    "name": "Vintage Indigo Jeans",
+    "price": 88.00,
+    "image": "assets/images/jeans/img_0007.jpg",
+    "category": "Jeans",
+    "rating": 4.3,
+    "inStock": true
+  },
+  {
+    "id": "jeans_img_0009",
+    "brand": "Zara",
+    "name": "Tapered Fit Blue Jeans",
+    "price": 79.00,
+    "image": "assets/images/jeans/img_0009.jpg",
+    "category": "Jeans",
+    "rating": 4.0,
+    "inStock": true
+  },
+  {
+    "id": "jeans_img_0010",
+    "brand": "H&M",
+    "name": "Relaxed Fit Denim Slacks",
+    "price": 74.00,
+    "image": "assets/images/jeans/img_0010.jpg",
+    "category": "Jeans",
+    "rating": 4.2,
+    "inStock": true
+  },
+  {
+    "id": "jeans_img_0011",
+    "brand": "adidas",
+    "name": "Super-Stretch Casual Jeans",
+    "price": 115.00,
+    "image": "assets/images/jeans/img_0011.jpg",
+    "category": "Jeans",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "id": "jeans_img_0012",
+    "brand": "Nike",
+    "name": "Flex Denim Athletic Jeans",
+    "price": 125.00,
+    "image": "assets/images/jeans/img_0012.jpg",
+    "category": "Jeans",
+    "rating": 4.8,
+    "inStock": true
+  },
+  {
+    "id": "jeans_img_0013",
+    "brand": "Zara",
+    "name": "Acid Wash Street Jeans",
+    "price": 95.00,
+    "image": "assets/images/jeans/img_0013.jpg",
+    "category": "Jeans",
+    "rating": 4.4,
+    "inStock": true
+  },
+  {
+    "id": "men_cargos_img_0001",
+    "brand": "adidas",
+    "name": "Men's Solid Cargo Pants",
+    "price": 85.00,
+    "image": "assets/images/men_cargos/img_0001.jpg",
+    "category": "Cargos",
+    "rating": 4.4,
+    "inStock": true
+  },
+  {
+    "id": "men_cargos_img_0002",
+    "brand": "Nike",
+    "name": "Tech Fleece Utility Cargos",
+    "price": 110.00,
+    "image": "assets/images/men_cargos/img_0002.jpg",
+    "category": "Cargos",
+    "rating": 4.7,
+    "inStock": true
+  },
+  {
+    "id": "men_cargos_img_0003",
+    "brand": "Puma",
+    "name": "Military Style Cargo Pants",
+    "price": 80.00,
+    "image": "assets/images/men_cargos/img_0003.jpg",
+    "category": "Cargos",
+    "rating": 4.2,
+    "inStock": true
+  },
+  {
+    "id": "men_cargos_img_0005",
+    "brand": "Zara",
+    "name": "Khaki Slim Fit Cargos",
+    "price": 95.00,
+    "image": "assets/images/men_cargos/img_0005.jpg",
+    "category": "Cargos",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "men_cargos_img_0006",
+    "brand": "H&M",
+    "name": "Olive Green Cargo Trousers",
+    "price": 65.00,
+    "image": "assets/images/men_cargos/img_0006.jpg",
+    "category": "Cargos",
+    "rating": 3.9,
+    "inStock": true
+  },
+  {
+    "id": "men_cargos_img_0007",
+    "brand": "adidas",
+    "name": "Outdoor Hiking Cargos",
+    "price": 105.00,
+    "image": "assets/images/men_cargos/img_0007.jpg",
+    "category": "Cargos",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "id": "men_cargos_img_0009",
+    "brand": "Nike",
+    "name": "Ripstop Training Cargos",
+    "price": 120.00,
+    "image": "assets/images/men_cargos/img_0009.jpg",
+    "category": "Cargos",
+    "rating": 4.8,
+    "inStock": true
+  },
+  {
+    "id": "men_cargos_img_0010",
+    "brand": "Puma",
+    "name": "Athletic Fleece Cargos",
+    "price": 90.00,
+    "image": "assets/images/men_cargos/img_0010.jpg",
+    "category": "Cargos",
+    "rating": 4.3,
+    "inStock": true
+  },
+  {
+    "id": "men_cargos_img_0011",
+    "brand": "Zara",
+    "name": "Cuffed Streetwear Cargos",
+    "price": 89.00,
+    "image": "assets/images/men_cargos/img_0011.jpg",
+    "category": "Cargos",
+    "rating": 4.4,
+    "inStock": true
+  },
+  {
+    "id": "men_cargos_img_0012",
+    "brand": "H&M",
+    "name": "Light Beige Jogger Cargos",
+    "price": 59.00,
+    "image": "assets/images/men_cargos/img_0012.jpg",
+    "category": "Cargos",
+    "rating": 4.1,
+    "inStock": true
+  },
+  {
+    "id": "men_cargos_img_0013",
+    "brand": "adidas",
+    "name": "Premium Woven Cargos",
+    "price": 115.00,
+    "image": "assets/images/men_cargos/img_0013.jpg",
+    "category": "Cargos",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "id": "men_cargos_img_0014",
+    "brand": "Nike",
+    "name": "Storm-FIT Explorer Cargos",
+    "price": 135.00,
+    "image": "assets/images/men_cargos/img_0014.jpg",
+    "category": "Cargos",
+    "rating": 4.9,
+    "inStock": true
+  },
+  {
+    "id": "printed_hoodies_img_0001",
+    "brand": "Nike",
+    "name": "Graphic Print Sport Hoodie",
+    "price": 85.00,
+    "image": "assets/images/printed_hoodies/img_0001.jpg",
+    "category": "Hoodies",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "printed_hoodies_img_0002",
+    "brand": "Nike",
+    "name": "Club Fleece Printed Hoodie",
+    "price": 80.00,
+    "image": "assets/images/printed_hoodies/img_0002.jpg",
+    "category": "Hoodies",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "id": "printed_hoodies_img_0003",
+    "brand": "adidas",
+    "name": "Trefoil Patterned Hoodie",
+    "price": 90.00,
+    "image": "assets/images/printed_hoodies/img_0003.jpg",
+    "category": "Hoodies",
+    "rating": 4.7,
+    "inStock": true
+  },
+  {
+    "id": "printed_hoodies_img_0004",
+    "brand": "adidas",
+    "name": "Street Camo Printed Hoodie",
+    "price": 95.00,
+    "image": "assets/images/printed_hoodies/img_0004.jpg",
+    "category": "Hoodies",
+    "rating": 4.4,
+    "inStock": true
+  },
+  {
+    "id": "printed_hoodies_img_0005",
+    "brand": "Puma",
+    "name": "Downtown Printed Hoodie",
+    "price": 75.00,
+    "image": "assets/images/printed_hoodies/img_0005.jpg",
+    "category": "Hoodies",
+    "rating": 4.2,
+    "inStock": true
+  },
+  {
+    "id": "printed_hoodies_img_0006",
+    "brand": "Puma",
+    "name": "Classic Logo Hoodie",
+    "price": 70.00,
+    "image": "assets/images/printed_hoodies/img_0006.jpg",
+    "category": "Hoodies",
+    "rating": 4.1,
+    "inStock": true
+  },
+  {
+    "id": "printed_hoodies_img_0007",
+    "brand": "Zara",
+    "name": "Abstract Art Oversized Hoodie",
+    "price": 89.00,
+    "image": "assets/images/printed_hoodies/img_0007.jpg",
+    "category": "Hoodies",
+    "rating": 4.3,
+    "inStock": true
+  },
+  {
+    "id": "printed_hoodies_img_0008",
+    "brand": "Zara",
+    "name": "Modernist Pattern Hoodie",
+    "price": 99.00,
+    "image": "assets/images/printed_hoodies/img_0008.jpg",
+    "category": "Hoodies",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "printed_hoodies_img_0009",
+    "brand": "H&M",
+    "name": "Relaxed Fit Printed Hoodie",
+    "price": 49.00,
+    "image": "assets/images/printed_hoodies/img_0009.jpg",
+    "category": "Hoodies",
+    "rating": 3.8,
+    "inStock": true
+  },
+  {
+    "id": "printed_hoodies_img_0010",
+    "brand": "H&M",
+    "name": "Camo Pullover Hoodie",
+    "price": 55.00,
+    "image": "assets/images/printed_hoodies/img_0010.jpg",
+    "category": "Hoodies",
+    "rating": 4.0,
+    "inStock": true
+  },
+  {
+    "id": "printed_hoodies_img_0011",
+    "brand": "Nike",
+    "name": "Dynamic Tie-Dye Hoodie",
+    "price": 110.00,
+    "image": "assets/images/printed_hoodies/img_0011.jpg",
+    "category": "Hoodies",
+    "rating": 4.8,
+    "inStock": true
+  },
+  {
+    "id": "printed_hoodies_img_0012",
+    "brand": "adidas",
+    "name": "Geometric Print Sport Hoodie",
+    "price": 105.00,
+    "image": "assets/images/printed_hoodies/img_0012.jpg",
+    "category": "Hoodies",
+    "rating": 4.7,
+    "inStock": true
+  },
+  {
+    "id": "printed_tshirts_img_0001",
+    "brand": "Nike",
+    "name": "Swoosh Graphic Printed Tee",
+    "price": 35.00,
+    "image": "assets/images/printed_tshirts/img_0001.jpg",
+    "category": "T-Shirts",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "printed_tshirts_img_0002",
+    "brand": "Nike",
+    "name": "Vintage Box Logo T-Shirt",
+    "price": 38.00,
+    "image": "assets/images/printed_tshirts/img_0002.jpg",
+    "category": "T-Shirts",
+    "rating": 4.6,
+    "inStock": true
+  },
+  {
+    "id": "printed_tshirts_img_0003",
+    "brand": "adidas",
+    "name": "Linear Logo Graphic Tee",
+    "price": 32.00,
+    "image": "assets/images/printed_tshirts/img_0003.jpg",
+    "category": "T-Shirts",
+    "rating": 4.3,
+    "inStock": true
+  },
+  {
+    "id": "printed_tshirts_img_0004",
+    "brand": "adidas",
+    "name": "Camo Badge of Sport Tee",
+    "price": 36.00,
+    "image": "assets/images/printed_tshirts/img_0004.jpg",
+    "category": "T-Shirts",
+    "rating": 4.4,
+    "inStock": true
+  },
+  {
+    "id": "printed_tshirts_img_0005",
+    "brand": "Puma",
+    "name": "Retro Graphic Cotton Tee",
+    "price": 29.00,
+    "image": "assets/images/printed_tshirts/img_0005.jpg",
+    "category": "T-Shirts",
+    "rating": 4.1,
+    "inStock": true
+  },
+  {
+    "id": "printed_tshirts_img_0006",
+    "brand": "Puma",
+    "name": "Essential Cat Graphic Tee",
+    "price": 28.00,
+    "image": "assets/images/printed_tshirts/img_0006.jpg",
+    "category": "T-Shirts",
+    "rating": 4.0,
+    "inStock": true
+  },
+  {
+    "id": "printed_tshirts_img_0007",
+    "brand": "Zara",
+    "name": "Abstract Face Printed Tee",
+    "price": 45.00,
+    "image": "assets/images/printed_tshirts/img_0007.jpg",
+    "category": "T-Shirts",
+    "rating": 4.4,
+    "inStock": true
+  },
+  {
+    "id": "printed_tshirts_img_0008",
+    "brand": "Zara",
+    "name": "Typography Oversized Tee",
+    "price": 49.00,
+    "image": "assets/images/printed_tshirts/img_0008.jpg",
+    "category": "T-Shirts",
+    "rating": 4.5,
+    "inStock": true
+  },
+  {
+    "id": "solid_tshirts_img_0001",
+    "brand": "H&M",
+    "name": "Solid Crewneck Cotton Tee",
+    "price": 19.00,
+    "image": "assets/images/solid_tshirts/img_0001.jpg",
+    "category": "T-Shirts",
+    "rating": 4.2,
+    "inStock": true
+  },
+  {
+    "id": "solid_tshirts_img_0002",
+    "brand": "adidas",
+    "name": "Solid Cotton Crewneck T-Shirt",
+    "price": 35.00,
+    "image": "assets/images/solid_tshirts/img_0002.jpg",
+    "category": "T-Shirts",
+    "rating": 4.4,
+    "inStock": true
+  },
+  {
+    "id": "solid_tshirts_img_0003",
+    "brand": "adidas",
+    "name": "Solid Crewneck Maroon T-Shirt",
+    "price": 38.00,
+    "image": "assets/images/solid_tshirts/img_0003.jpg",
+    "category": "T-Shirts",
+    "rating": 4.3,
+    "inStock": true
+  },
+  {
+    "id": "solid_tshirts_img_0004",
+    "brand": "adidas",
+    "name": "Solid Cotton Blue T-Shirt",
+    "price": 35.00,
+    "image": "assets/images/solid_tshirts/img_0004.jpg",
+    "category": "T-Shirts",
+    "rating": 4.1,
+    "inStock": true
+  },
+  {
+    "id": "solid_tshirts_img_0005",
+    "brand": "Nike",
+    "name": "Dri-FIT Solid Training Tee",
+    "price": 42.00,
+    "image": "assets/images/solid_tshirts/img_0005.jpg",
+    "category": "T-Shirts",
+    "rating": 4.7,
+    "inStock": true
+  },
+  {
+    "id": "solid_tshirts_img_0006",
+    "brand": "Nike",
+    "name": "Premium Heavyweight Solid Tee",
+    "price": 48.00,
+    "image": "assets/images/solid_tshirts/img_0006.jpg",
+    "category": "T-Shirts",
+    "rating": 4.8,
+    "inStock": true
+  },
+  {
+    "id": "solid_tshirts_img_0007",
+    "brand": "Puma",
+    "name": "Solid Heather Grey Tee",
+    "price": 25.00,
+    "image": "assets/images/solid_tshirts/img_0007.jpg",
+    "category": "T-Shirts",
+    "rating": 4.2,
+    "inStock": true
+  },
+  {
+    "id": "solid_tshirts_img_0008",
+    "brand": "Zara",
+    "name": "Minimalist Pastel Pink Tee",
+    "price": 35.00,
+    "image": "assets/images/solid_tshirts/img_0008.jpg",
+    "category": "T-Shirts",
+    "rating": 4.3,
+    "inStock": true
+  }
+]

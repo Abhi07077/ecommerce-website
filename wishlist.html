@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist</title>
+    <link rel="stylesheet" href="assets/css/wishlist.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <section id="header">
+         <a href="index.html"><img id="logo" src="assets/logo.png" alt="Logo"></a>
+
+         <div id="search-box">
+            <input type="text" placeholder="Search Product">
+            <button id="search-btn"><span class="material-symbols-outlined">search</span></button>
+         </div>
+         <nav id="navigation">
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Shop</a></li>
+                <li><a href="wishlist.html" class="active"><span class="material-symbols-outlined">favorite</span></a></li>
+                <li><a href="cart.html"><span class="material-symbols-outlined">shopping_cart</span></a></li>
+            </ul>
+         </nav>
+    </section>
+
+    <!-- Page Header Banner -->
+    <section id="wishlist-header">
+        <h2>#My_Wishlist</h2>
+        <p>Save your favorite items & add them to cart anytime</p>
+    </section>
+
+    <!-- Wishlist Contents -->
+    <section id="wishlist-section">
+        <!-- Wishlist Content Container (Only visible if wishlist is not empty) -->
+        <div id="wishlist-content">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Product Image</th>
+                        <th>Product Details</th>
+                        <th>Price</th>
+                        <th>Stock Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="wishlist-items">
+                    <!-- Items will be injected dynamically via Javascript -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Empty Wishlist Display -->
+        <div id="empty-wishlist" class="empty-wishlist-container">
+            <span class="material-symbols-outlined empty-icon">favorite</span>
+            <h3>Your wishlist is empty</h3>
+            <p>Save items you like to view them here later!</p>
+            <a href="catalog.html" class="shop-btn">Explore Shop</a>
+        </div>
+    </section>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+
+    <!-- Footer Section -->
+    <section id="footer">
+       <img src="assets/logo.png" alt="Logo">
+       <div id="contact">
+          <h6>Contact</h6>
+          <br>
+          <p>Address : Jath 416412, Maharastra</p>
+          <p>Phone : 3724785892</p>
+          <p>Hours : 10.00 - 18.00, Mon - Sat</p>
+       </div>
+       <div id="About">
+          <h6>About</h6> 
+          <br>
+          <p>About Us</p>
+          <p>Delivery Information</p>
+          <p>Privacy policy</p>
+          <p>Terms & Conditions</p>
+          <p>Contact Us</p>
+       </div>
+       <div id="account">
+          <h6>Account</h6>
+          <br>
+          <p>Sign in</p>
+          <p>My Account</p>
+          <p>Wishlist</p>
+          <p>Track my Order</p>
+          <p>help</p>
+       </div>
+    </section>
+
+    <script src="js/pages/wishlist.js"></script>
+</body>
+</html>

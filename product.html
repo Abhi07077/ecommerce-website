@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="assets/css/product-detail.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    
+    <section id="header">
+         <a href="index.html"><img id="logo" src="assets/logo.png" alt="Logo"></a>
+
+         <div id="search-box">
+            <input type="text" placeholder="Search Product">
+            <button id="search-btn"><span class="material-symbols-outlined">search</span></button>
+         </div>
+         <nav id="navigation">
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html" class="active">Shop</a></li>
+                <li><a href="wishlist.html"><span class="material-symbols-outlined">favorite</span></a></li>
+                <li><a href="cart.html"><span class="material-symbols-outlined">shopping_cart</span></a></li>
+            </ul>
+         </nav>
+    </section>
+
+   
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="/assets/images/casual_shirts/img_0016.jpg" width="100%" id="MainImg" alt="Main Product Image">
+            
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="/assets/images/casual_shirts/img_0016.jpg" width="100%" class="small-img" alt="Thumbnail 1">
+                </div>
+                <div class="small-img-col">
+                    <img src="/assets/images/casual_shirts/img_0017.jpg" width="100%" class="small-img" alt="Thumbnail 2">
+                </div>
+                <div class="small-img-col">
+                    <img src="/assets/images/casual_shirts/img_0018.jpg" width="100%" class="small-img" alt="Thumbnail 3">
+                </div>
+                <div class="small-img-col">
+                    <img src="/assets/images/casual_shirts/img_0019.jpg" width="100%" class="small-img" alt="Thumbnail 4">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Home / Shop / Shirts</h6>
+            <h4 class="brand">adidas</h4>
+            <h2 class="title">Men's Blue Denim Shirt</h2>
+            <h3 class="price">$78.00</h3>
+            
+            <div class="selectors">
+                <select id="size-select">
+                    <option value="">Select Size</option>
+                    <option value="S">Small (S)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="L">Large (L)</option>
+                    <option value="XL">Extra Large (XL)</option>
+                    <option value="XXL">Double Extra Large (XXL)</option>
+                </select>
+                
+                <div class="cart-action">
+                    <input type="number" value="1" min="1" id="quantity-input">
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                    <button class="wishlist-btn-detail" id="add-to-wishlist-btn">
+                        <span class="material-symbols-outlined">favorite</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="description-box">
+                <h4>Product Details</h4>
+                <p>Elevate your casual wardrobe with the classic styling of this denim shirt. Fabricated from 100% premium cotton for maximum comfort and durability, it features a semi-relaxed fit, standard button placket, buttoned patch pockets at the chest, and adjustable barrel cuffs.</p>
+                <p>Perfect for layering over a graphic tee or wearing on its own. Pre-washed for a super soft hand feel from day one.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+
+    <!-- Footer Section -->
+    <section id="footer">
+       <img src="/assets/logo.png" alt="Logo">
+       <div id="contact">
+          <h6>Contact</h6>
+          <br>
+          <p>Address : Jath 416412, Maharastra</p>
+          <p>Phone : 3724785892</p>
+          <p>Hours : 10.00 - 18.00, Mon - Sat</p>
+       </div>
+       <div id="About">
+          <h6>About</h6> 
+          <br>
+          <p>About Us</p>
+          <p>Delivery Information</p>
+          <p>Privacy policy</p>
+          <p>Terms & Conditions</p>
+          <p>Contact Us</p>
+       </div>
+       <div id="account">
+          <h6>Account</h6>
+          <br>
+          <p>Sign in</p>
+          <p>My Account</p>
+          <p>Wishlist</p>
+          <p>Track my Order</p>
+          <p>help</p>
+       </div>
+    </section>
+
+   
+    <script>
+        const MainImg = document.getElementById("MainImg");
+        const smallimg = document.getElementsByClassName("small-img");
+
+        for (let i = 0; i < smallimg.length; i++) {
+            smallimg[i].addEventListener("click", function() {
+                MainImg.src = this.src;
+               
+                for (let j = 0; j < smallimg.length; j++) {
+                    smallimg[j].parentElement.classList.remove("active");
+                }
+                this.parentElement.classList.add("active");
+            });
+        }
+        
+        if(smallimg[0]) {
+            smallimg[0].parentElement.classList.add("active");
+        }
+    </script>
+    <script src="js/data/products.js"></script>
+    <script src="js/pages/detail.js"></script>
+</body>
+</html>

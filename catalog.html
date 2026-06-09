@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="assets/css/catalog.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <section id = "header">
+         <a href="#"><img id="logo" src="assets/logo.png"></a>
+
+         <div id="search-box">
+            <input type="text" placeholder="Search Product">
+            <button id="search-btn"><span class="material-symbols-outlined">search</span></button>
+         </div>
+         <nav id="navigation">
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html" class="active">Shop</a></li>
+                <li><a href="wishlist.html"><span class="material-symbols-outlined">favorite</span></a></li>
+                <li><a href="cart.html"><span class="material-symbols-outlined">shopping_cart</span></a></li>
+            </ul>
+         </nav>
+    </section>
+    
+    <section id="category">
+        <button class="active">All</button>
+        <button>Casual</button>
+        <button>Formal</button>
+        <button>Jeans</button>
+        <button>Cargos</button>
+        <button>Hoodies</button>
+        <button>T-Shirts</button>
+        <span class="material-symbols-outlined filter" id="filter-icon">filter_alt</span>
+        <div class="filter-dropdown" id="filter-dropdown">
+            <div class="filter-option active" data-sort="default">Default Sorting</div>
+            <div class="filter-option" data-sort="price-asc">Price: Low to High</div>
+            <div class="filter-option" data-sort="price-desc">Price: High to Low</div>
+            <div class="filter-option" data-sort="rating-desc">Rating: High to Low</div>
+        </div>
+    </section>
+
+    <section id="all-products">
+
+        <div class="product-container">
+            <!-- Products are dynamically populated from js/data/products.js -->
+        </div>
+
+    </section>
+
+    <section id="next-page">
+        <button>1</button>
+        <button>2</button>
+        <button>Next</button>
+    </section>
+
+     <section id="footer">
+       <img src="/assets/logo.png">
+       <div id="contact">
+          <h6>Contact</h6>
+          <br>
+          <p>Address : Jath 416412, Maharastra</p>
+          <p>Phone : 3724785892</p>
+          <p>Hours : 10.00 - 18.00, Mon - Sat</p>
+       </div>
+       <div id="About">
+          <h6>About</h6> 
+          <br>
+          <p>About Us</p>
+          <p>Delivery Information</p>
+          <p>Privacy policy</p>
+          <p>Terms & Conditions</p>
+          <p>Contact Us</p>
+       </div>
+       <div id="account">
+          <h6>Account</h6>
+          <br>
+          <p>Sign in</p>
+          <p>My Account</p>
+          <p>Wishlist</p>
+          <p>Track my Order</p>
+          <p>help</p>
+       </div>
+    </section>
+
+     <script src="js/data/products.js"></script>
+     <script src="js/pages/catalog.js"></script>
+</body>
+</html>
